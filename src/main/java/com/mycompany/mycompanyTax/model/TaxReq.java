@@ -6,7 +6,6 @@ public class TaxReq {
     int age;
     int medicalAidMembers;
     double taxableEarnings;
-    String taxType;
 
     public TaxReq(int age, String taxType, int taxYear, double taxableEarnings, String medicalAidMembers, String taxType1) {
     }
@@ -43,14 +42,6 @@ public class TaxReq {
         this.taxableEarnings = taxableEarnings;
     }
 
-    public String getTaxType() {
-        return taxType;
-    }
-
-    public void setTaxType(String taxType) {
-        this.taxType = taxType;
-    }
-
     @Override
     public String toString() {
         return "TaxReq{" +
@@ -58,7 +49,6 @@ public class TaxReq {
                 ", age=" + age +
                 ", medicalAidMembers=" + medicalAidMembers +
                 ", taxableEarnings=" + taxableEarnings +
-                ", taxType='" + taxType + '\'' +
                 '}';
     }
 }
